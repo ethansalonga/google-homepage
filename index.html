@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        #navbar{
+            overflow: hidden;
+        }
+
+        .leftnav {
+            float: left;
+            text-align: center;
+            padding: 4px 10px;
+            font-size: 14px;
+        }
+        
+        .rightnav{
+            float: right;
+            text-align: center;
+            padding: 4px 10px;
+            font-size: 14px;
+        }
+
+        #logoform {
+            text-align: center;
+            padding-top: 175px;
+        }
+
+        #logo {
+            padding-bottom: 30px;
+        }
+
+        #footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: lightgray;
+        }
+
+        #footer a {
+            float: left;
+            text-align: center;
+            padding: 10px 10px 10px 30px;
+            color: #3d3d3b;
+        }
+
+        input {
+            border-radius: 16px;
+            border-width: 1.15px;
+            border-color: lightgray;
+            padding: 11px;
+        }
+
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <a class="leftnav"> About </a>
+        <a class="leftnav"> Store </a>
+        <a class="rightnav"> Gmail </a>
+        <a class="rightnav"> Images </a>
+    </nav>
+    
+    <div id="logoform">
+    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="The Google logo" id="logo">
+    <form>
+        <input name="searchbox" type="text" size="55">
+    </form>
+    <button type="button">Google Search</button>
+    <button type="button">I'm Feeling Lucky</button>
+    </div>
+
+    <nav id="footer">
+        <a> Advertising </a>
+        <a> Business </a>
+        <a> How Search works </a>
+    </nav>
+</body>
