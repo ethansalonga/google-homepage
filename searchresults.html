@@ -1,46 +1,19 @@
 <!DOCTYPE html>
 <head>
     <style>
-        #navbar{
-            overflow: hidden;
-        }
-
-        .leftnav {
-            float: left;
-            text-align: center;
-            padding: 4px 10px;
-            font-size: 14px;
+        body {
+            overflow: scroll;
+            font-family: Arial, Helvetica, sans-serif;
         }
         
-        .rightnav{
-            float: right;
-            text-align: center;
-            padding: 4px 10px;
-            font-size: 14px;
-        }
-
-        #logoform {
-            text-align: center;
-            padding-top: 175px;
-        }
-
-        #logo {
-            padding-bottom: 30px;
-        }
-
-        #footer {
+        .navbar {
+            display: flex;
+            flex-direction: row;
+            justify-content: left;
             position: fixed;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            background-color: lightgray;
-        }
-
-        #footer a {
-            float: left;
-            text-align: center;
-            padding: 10px 10px 10px 30px;
-            color: #3d3d3b;
+            top: 0;
+            z-index: 1;
+            background-color: white;
         }
 
         input {
@@ -48,30 +21,150 @@
             border-width: 1.15px;
             border-color: lightgray;
             padding: 11px;
+            margin: 20px;
+        }
+
+        input:hover {
+            box-shadow: 0.1px 0.1px 2px 2px;
+            color: lightgray;
+        }
+
+        #logo {
+            max-height: 50px;
+            margin: 20px;
+        }
+
+        .navbartwo {
+            display: flex;
+            flex-direction: row;
+            justify-content: left;
+            position: absolute;
+            top: 90px;
+            left: 210px;
+            z-index: 0;
+        }
+
+        .navbartwo a {
+            text-decoration: none;
+            margin: 0px 8px 0px 8px;
+            display: block;
+            color: #3d3d3b;
+            opacity: 0.9;
+            font-size: 14px;
+        }
+
+        #All {
+            border-bottom: 3px solid #1A73E8;
+            padding-bottom: 10px;
+        }
+
+        #Settings {
+            padding-left: 150px;
+        }
+
+        hr {
+            border: -100px solid darkgray;
+            position: absolute;
+            top: 111px;
+            width: 100%;
+            opacity: 0.3;
+        }
+
+        #resultsnumber {
+            position: absolute;
+            top: 125px;
+            left: 218px;
+            font-size: 14px;
+            color: #696666;
+            opacity: 0.8;
+        }
+
+        #pageurl1 {
+            position: absolute;
+            top: 160px;
+            left: 218px;
+            font-size: 14px;
+        }
+
+        #page1 {
+            display: block;
+            position: absolute;
+            top: 200px;
+            left: 218px;
+            width: 575px;
+        }
+
+        #page1 a {
+            text-decoration: none;
+            color: #344bb3;
+            font-size: 21px;
+        }
+
+        #page1 a:hover {
+            text-decoration: underline;
+        }
+
+        .description {
+            margin-top: 5px;
+            font-size: 14px;
+            line-height: 20px;
+            color: #3d3d3b;
+            opacity: 1;
+        }
+
+        #pageurl2 {
+            position: absolute;
+            top: 300px;
+            left: 218px;
+            font-size: 14px;
         }
 
     </style>
 </head>
 <body>
-    <nav id="navbar">
-        <a class="leftnav"> About </a>
-        <a class="leftnav"> Store </a>
-        <a class="rightnav"> Gmail </a>
-        <a class="rightnav"> Images </a>
-    </nav>
-    
-    <div id="logoform">
-    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="The Google logo" id="logo">
-    <form>
-        <input name="searchbox" type="text" size="55">
-    </form>
-    <button type="button">Google Search</button>
-    <button type="button">I'm Feeling Lucky</button>
-    </div>
+       <div class="navbar">
+           <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="The Google logo" id="logo">
 
-    <nav id="footer">
-        <a> Advertising </a>
-        <a> Business </a>
-        <a> How Search works </a>
-    </nav>
+           <form>
+            <input name="searchbox" type="text" size="80">
+           </form>
+       </div>
+
+       <div class="navbartwo">
+           <a href=#All id="All">All</a>
+           <a href=#News>News</a>
+           <a href=#Maps>Maps</a>
+           <a href=#Videos>Videos</a>
+           <a href=#Shopping>Shopping</a>
+           <a href=#More>More</a>
+           <a href=#Settings id="Settings">Settings</a>
+           <a href=#Tools id="Tools">Tools</a>
+       </div>
+
+       <hr>
+
+       <div>
+           <p id="resultsnumber">About 69,800,000 results (0.70 seconds)</p>
+       </div>
+
+       <div>
+           <p id="pageurl1"><strong>Ad</strong> &bull; www.wix.com/</p>
+       </div>
+
+       <div id="page1">
+           <a href=#nowhere>Build Your Own Website - Create Your Own Website, Free.</a>
+           <p class="description">Easy to Use, Online Website Builder. 100s of templates. Custom domain name. 24/7 support center. Customizable templates. Market leaders. Top industry hosting. Easy-to-add blog. 100s of Apps. Mobile optimized. Traffic generation tools. Services: App Market, SEO Wizard.</p>
+       </div>
+
+       <div>
+           <p id="pageurl2">victor-lif.github.io > google-search-results</p>
+       </div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </body>
